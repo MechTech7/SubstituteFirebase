@@ -45,7 +45,15 @@ exports.addMessage = functions.https.onRequest((req, res) => {
   });
 
 });
-
+exports.searchNames = functions.https.onRequest((req, res) => {
+  admin.database().ref('/substituteteachers/johndoe_uid/firstname').once('L48i96Y8IPWycKdI61o').then(function(snapshot) {
+    var username = snapshot.val();
+    return 0;
+  // ...
+  }).catch(function(error){
+    console.log(error);
+  });
+})
 // [START makeUppercase]
 // Listens for new messages added to /messages/:pushId/original and creates an
 // uppercase version of the message to /messages/:pushId/uppercase

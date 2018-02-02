@@ -13,6 +13,7 @@ target 'SubstituteFirebase' do
   end
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
   target 'SubstituteFirebaseUITests' do
     inherit! :search_paths
     # Pods for testing
