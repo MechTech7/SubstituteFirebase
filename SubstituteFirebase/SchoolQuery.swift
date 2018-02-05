@@ -15,19 +15,28 @@ class TeacherQuery: NSObject{
     init(in_ref: DatabaseReference){
         ref = in_ref
     }
-    func get_satisfying(key: String, value: String) -> DataSnapshot{
-        var op = DataSnapshot()
-        ref.observe(.value, with: { snapshot in
+    func new_form(){
+        
+    }
+    func update_form(){
+        
+    }
+    func get_satisfying(key: String, value: String, completed: @escaping ([DataSnapshot]) -> Void){
+        //var op = DataSnapshot()
+        var op = [DataSnapshot]()
+        //this is a closure, this executes async, figure out how to get this as async or some other workaround
+        ref.observe(.value, with: {snapshot in
             for child in snapshot.children{
                 let snap = child as! DataSnapshot
                 let k = snap.childSnapshot(forPath: key)
                 if k.value! as! String == value{
-                    op = snap
-                    print(snap.value!)
+                    //op = snap
+                    op.append(snap)
+                    //print(snap.value!)
                 }
                 
             }
+            completed(op)
         });
-        return op
     }
 }

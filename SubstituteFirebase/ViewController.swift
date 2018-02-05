@@ -21,9 +21,17 @@ class ViewController: UIViewController {
         let usersRef = Database.database().reference(withPath: "online")
         ref = Database.database().reference(withPath: "events")
         let tq = TeacherQuery(in_ref: ref)
-        let a = tq.get_satisfying(key: "teacher", value: "PablitoLake")
-        print("ouput: ")
-        print(a.value)
+        let handler: ([DataSnapshot]) -> Void = {search_result in
+            //this function is passed into the search function and executes after search completes
+            for i in search_result {
+                print(i.value)
+            }
+        }
+        
+        tq.get_satisfying(key: "teacher", value: "PablitoLake", completed: handler)
+        
+        
+        //trying to write a completion handler that uses the value returned by the original function
         /*ref.observe(.value, with: { snapshot in
             for child in snapshot.children{
                 let snap = child as! DataSnapshot

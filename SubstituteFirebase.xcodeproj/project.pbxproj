@@ -11,6 +11,7 @@
 		7F4F4864E3BEB4A023426122 /* Pods_SubstituteFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35557FDC42985FCC8F98CF31 /* Pods_SubstituteFirebase.framework */; };
 		C30ED3F82023796F00A4BD00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C30ED3F72023796E00A4BD00 /* GoogleService-Info.plist */; };
 		C30ED3FA2024FC1300A4BD00 /* SchoolQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30ED3F92024FC1300A4BD00 /* SchoolQuery.swift */; };
+		C330E6FE2027618A007AB837 /* SubForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C330E6FD2027618A007AB837 /* SubForm.swift */; };
 		C34343572018D89500834AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34343562018D89500834AAD /* AppDelegate.swift */; };
 		C34343592018D89500834AAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34343582018D89500834AAD /* ViewController.swift */; };
 		C343435C2018D89500834AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C343435A2018D89500834AAD /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		BAF8605BB94F74523E55397B /* Pods_SubstituteFirebaseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SubstituteFirebaseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C30ED3F72023796E00A4BD00 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C30ED3F92024FC1300A4BD00 /* SchoolQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolQuery.swift; sourceTree = "<group>"; };
+		C330E6FD2027618A007AB837 /* SubForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubForm.swift; sourceTree = "<group>"; };
 		C34343532018D89500834AAD /* SubstituteFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubstituteFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34343562018D89500834AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C34343582018D89500834AAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				C343435D2018D89500834AAD /* Assets.xcassets */,
 				C343435F2018D89500834AAD /* LaunchScreen.storyboard */,
 				C34343622018D89500834AAD /* Info.plist */,
+				C330E6FD2027618A007AB837 /* SubForm.swift */,
 			);
 			path = SubstituteFirebase;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 			files = (
 				C34343592018D89500834AAD /* ViewController.swift in Sources */,
 				C30ED3FA2024FC1300A4BD00 /* SchoolQuery.swift in Sources */,
+				C330E6FE2027618A007AB837 /* SubForm.swift in Sources */,
 				C34343572018D89500834AAD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
